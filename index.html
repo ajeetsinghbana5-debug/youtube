@@ -143,7 +143,7 @@
                     <span id="leadsBadgeCount" class="px-1.5 py-0.5 text-[11px] font-extrabold rounded-md bg-red-600 text-white">0</span>
                 </button>
 
-                <a id="navWhatsappBtn" href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20want%20to%20buy%20one%20of%20your%20YouTube%20channels." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-xl bg-emerald-600/15 hover:bg-emerald-600/25 border border-emerald-500/30 text-xs sm:text-sm font-semibold text-emerald-400 transition">
+                <a id="navWhatsappBtn" href="https://wa.me/919929982533?text=Hi,%20I%20want%20to%20buy%20one%20of%20your%20YouTube%20channels." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-xl bg-emerald-600/15 hover:bg-emerald-600/25 border border-emerald-500/30 text-xs sm:text-sm font-semibold text-emerald-400 transition">
                     <i data-lucide="message-circle" class="w-4 h-4"></i>
                     <span>Chat With Me</span>
                 </a>
@@ -360,7 +360,7 @@
                 <span class="text-zinc-500 text-xs ml-2">• 100% Direct Owner Transfer</span>
             </div>
 
-            <a id="footerWhatsappBtn" href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20want%20to%20buy%20a%20YouTube%20channel%20from%20you." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-emerald-400 hover:text-emerald-300 font-medium transition">
+            <a id="footerWhatsappBtn" href="https://wa.me/919929982533?text=Hi,%20I%20want%20to%20buy%20a%20YouTube%20channel%20from%20you." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-emerald-400 hover:text-emerald-300 font-medium transition">
                 <i data-lucide="message-circle" class="w-4 h-4"></i>
                 <span>Direct WhatsApp Contact</span>
             </a>
@@ -629,7 +629,7 @@
 
         let currentFilter = 'all';
         let sellerCountryCode = localStorage.getItem('creatorVault_cc') || '91';
-        let sellerPhone = localStorage.getItem('creatorVault_wa') || 'XXXXXXXXXX';
+        let sellerPhone = localStorage.getItem('creatorVault_wa') || '9929982533';
         let clickLogs = JSON.parse(localStorage.getItem('creatorVault_leads') || '[]');
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -644,11 +644,11 @@
                 } else {
                     alert("Incorrect password! Access denied.");
                 }
-            } else if (sellerPhone === 'XXXXXXXXXX') {
+            } else if (sellerPhone === '9929982533') {
                 document.getElementById('adminSetupBar').classList.remove('hidden');
             }
 
-            if (sellerPhone !== 'XXXXXXXXXX') {
+            if (sellerPhone !== '9929982533') {
                 document.getElementById('sellerWhatsappInput').value = sellerPhone;
             }
             if (sellerCountryCode) {
@@ -684,7 +684,7 @@
                 renderChannels();
                 showToast(`WhatsApp updated to +${sellerCountryCode} ${sellerPhone}!`);
             } else if (input.length === 0) {
-                sellerPhone = 'XXXXXXXXXX';
+                sellerPhone = '9929982533';
                 localStorage.removeItem('creatorVault_wa');
                 localStorage.removeItem('creatorVault_cc');
                 updateGlobalWhatsappLinks();
